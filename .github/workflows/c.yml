@@ -3,7 +3,7 @@ name: Build C++
 on:
   push:
     branches: [ main ]
-      pull_request:
+  pull_request:
     branches: [ main ]
 
 jobs:
@@ -19,5 +19,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Build project
-      run: g++ c.cpp -std=c++17 -o CI-demonstration
+      - name: Build project 
+        run: g++ c.cpp -std=c++17 -o CI-demonstration
